@@ -51,9 +51,12 @@ footer {
   color: white;
   justify-content: space-between;
 }
-footer ul {
+footer title {
+  font-size: 18px;
+}
+footer li {
   list-style: none;
-  padding-right: 4rem;
+  padding-left: 2rem;
 }
 .container .hero {
   width: 70rem;
@@ -91,7 +94,7 @@ footer ul {
   display: flex;
 }
 .content .text-block .date {
-  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .content img {
@@ -114,6 +117,5 @@ footer ul {
   background-color: #6eaa30;
 }
 h4 {
-  line-height: 1px;
   color: #6eaa30;
 }
