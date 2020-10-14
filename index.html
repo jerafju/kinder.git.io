@@ -3,106 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      body {
-        background-color: rgb(217, 222, 223);
-      }
-     
-      header {
-        width: 50%;
-        margin-left: 22rem;
-        margin-top: 3rem;
-        margin-bottom: 0px;
-        text-align: center;
-        border-bottom:rgb(55, 199, 132);
-         background-color: rgb(217, 222, 223);
-      }
-      header ul {       
-       list-style-type: none;     
-      overflow: hidden;
-       background-color:white;
-      }
-      header  li {
-        float: left;;
-       padding: 2px;
-      }
-      li a {
-        display: block;
-        color:black;
-        text-align: center;
-        padding: 25px 5px;
-        text-decoration: none;
-        
-       }
-       li a:active{
-         background-color:  rgb(55, 199, 132);    ;
-       }
-      header img {
-        width: 4rem;
-      }
-      footer{
-        background-color: rgb(55, 199, 132);
-        display: flex;
-        padding:1rem 20rem;
-       
-      }
-      footer ul{
-        list-style: none;
-        padding-right: 4rem;
-        
-      }
-      .hero{
-        position: relative;      
-         height:20rem;
-         margin:0rem 22rem;
-         width:50%
-         
-      }
-      .hero .text{
-         position: absolute;
-          bottom: 0px;
-          left: 16px;
-          
-          color: rgb(55, 199, 132);
-          font-weight:900;         
-              
-         padding-left: 20px;
-         padding-right: 20px;
-      }
-      .container{
-        display:flex;
-        width: 50%;
-        margin:2rem 22rem;
-        
-      }
-      .content{        
-        width: 35%;
-       
-        margin-top: 10px;
-        margin-right: 1rem;
-        margin-left: 0px;
-        padding: 0.5rem;       
-        background-color:white;
-        height: 15rem;
-      }
-      .content img{
-       width: 6rem;
-      }
-       .content button{          
-       color: white;
-       background-color:  rgb(55, 199, 132);    
-      
-       }
-       .content h3{
-         color:  rgb(55, 199, 132);    
-       }
-    </style>
+    <link href="style.css" rel="stylesheet">    
     <title>Document</title>
   </head>
   <body>
     <header>
-      <ul>
-        <li><img src="logo-placeholder copy.png" alt="logo"> </img> </li>
+    <div class="container">
+    
+      <div class="logo">
+      <img src="logo-placeholder.png" alt="logo"> </img>
+      </div>
+      <ul>       
         <li><a href="#">Home </a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Our Programs</a></li>
@@ -110,45 +21,70 @@
         <li><a href="#">News&Events</a></li>
         <li><a href="#">Contact us</a></li>
       </ul>
+      </div>
     </header>
-    <div class="hero">
-     <img src="banner copy.jpg" alt="hero"> </img>
+   
+    <div class="container">
+    <div class="hero">      
+     <img src="bannercopy.jpg" alt="hero"> </img>
      <div class="text">
        <h1>Lorem ipsum</h1>
       <p>Dolor sit amet consectetur</p>
       </div>
+      </div>
     </div>
     <div class="container">
+    <div class="content-block">
         <div class="content" >
-         <h3>News</h3>
-         <img src="news copy.jpeg" alt="newsbanner"><br/>
+         <h4>News</h4>
+         <img src="newscopy.jpeg" alt="newsbanner"><br/>
           <p> Lorem ipsum delor amlet</p>
+          <div class="link">
          <button>View all</button>
-
         </div>
-        <div class="content" >
-          <h3> Enrollments </h3>
+        </div>
+        <div class="content" >          
+          <h4> Enrollments </h4>
+          <div class="text-block">
+            <div class="date">
           <p> Lorem ipsum delor amlet</p>
           <p> Lorem ipsum delor amlet</p>
           <p> Lorem ipsum delor amlet</p>
-          <button>View all</button>
+          </div>
+          </div>
+          <div class="link">
+            <button>View all</button>
+          </div>
+          
         </div>
        
           <div class="content">
-            <h3> Calender </h3>
-            <p><strong>01</strong> Lorem ipsum delor amlet</p>
-          <p> <strong>12</strong> Lorem ipsum delor amlet </p>
-          <p> <strong>03</strong> Lorem ipsum delor amlet </p>
-            <button>View all</button>
+            <h4> Calender </h4> 
+             <div class="text-block">
+              <div class="date">
+               <p> <div><strong>01</strong></div><div>Sep </div></p> 
+               <p> <div><strong>12</strong></div><div>Oct </div></p>
+               <p><div><strong>03</strong></div> <div>Nov </div></p>            
+            </div>
+            <div>
+              <p>  Lorem ipsum delor amlet Lorem ipsum delor amlet </p>            
+              <p> Lorem ipsum delor amlet Lorem ipsum delor amlet </p>
+              <p> Lorem ipsum delor amlet Lorem ipsum delor amlet </p>
+            </div>
+          </div>
+           <div class="link">
+              <button>View all</button>
+            </div>
           </div>
         
+    </div>
     </div>
     <footer>
       
       <div>
         
         <ul>
-          <li><strong>About</strong></li>
+          <strong>About</strong>
           <li> Our Philosophy </li>
           <li>Staff </li>
           <li>Premises</li>
@@ -162,7 +98,7 @@
       <div>
         
         <ul>
-          <li><strong>Our Programs</strong></li>
+         <strong>Our Programs</strong>
           <li> Rosellas </li>
           <li>Koalas</li>
           <li>Cockatoos</li>
@@ -171,21 +107,20 @@
         </ul>
       </div>
     
-      <div>
-        
+      <div>        
         <ul>
-          <li><strong>Gallery</strong></li>
+          <strong>Gallery</strong>
           <li> News & Events </li>
           <li>Contact </li>        
       
         </ul>
       </div>
       <div>
-        <ul>
-          <li>40 Davis st,Kew</li>
-          <li>VIC 3101</li>
-          <li>(03)98171492</li>
-        </ul>
+        <address>
+          40 Davis st,Kew<br/>
+          VIC 3101<br/>
+          (03)98171492
+        </address>
       </div>
     </footer>
   </body>
