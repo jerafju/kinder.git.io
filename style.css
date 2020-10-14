@@ -54,7 +54,7 @@ footer {
 footer title {
   font-size: 18px;
 }
-footer li {
+footer ul {
   list-style: none;
   padding-left: 2rem;
 }
