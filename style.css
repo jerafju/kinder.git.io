@@ -88,17 +88,23 @@ footer ul {
   height: 20rem;
   margin: 2rem 0.5rem 3rem 0rem;
   padding-left: 2rem;
-  padding-top: 1rem;
+  font-size: 18;
 }
 .content .text-block {
   display: flex;
 }
 .content .text-block .date {
-  margin-bottom: 1rem;
+  margin: 2px;
 }
-
+.content .text-block .date .text {
+  padding-top: 1rem;
+}
 .content img {
   width: 8rem;
+}
+.content b {
+  color: #6eaa30;
+  font-size: 16px;
 }
 .content .link {
   display: block;
