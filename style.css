@@ -30,7 +30,7 @@ header .logo {
   margin-bottom: 1rem;
 }
 header .logo img {
-  width: 6rem;
+  width: 8rem;
 }
 header .logo::after {
   clear: both;
