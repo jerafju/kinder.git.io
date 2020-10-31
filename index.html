@@ -11,11 +11,25 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link href="style.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("header");
+        if (x.className === "header") {
+          x.className += " .responsive";
+        } else {
+          x.className = "header";
+        }
+      }
+    </script>
+    <header class="header" id="header">
       <div class="container">
         <div class="logo">
           <img src="logo-placeholder.png" alt="logo" />
@@ -27,6 +41,9 @@
           <li><a href="#">Gallery</a></li>
           <li><a href="#">News&Events</a></li>
           <li><a href="#">Contact us</a></li>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </ul>
       </div>
     </header>
