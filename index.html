@@ -22,11 +22,13 @@
     <script>
       function myFunction() {
         var x = document.getElementById("header");
+
         if (x.className === "header") {
-          x.className += " .responsive";
+          x.className += "responsive";
         } else {
           x.className = "header";
         }
+        // x.className = " .responsive";
       }
     </script>
     <header class="header" id="header">
